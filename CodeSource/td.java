@@ -1,14 +1,19 @@
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeMap;
+import java.util.Map.Entry;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 
 
 class Animal implements Comparable{
     private String nom;
+    private Tatouage tatouage;
     public Animal (String nom){
         this.nom = nom;
     }
@@ -25,6 +30,42 @@ class Animal implements Comparable{
     public int  compareTo(Object c){
         return this.nom.compareTo(((Animal)c).getNom());
     } 
+    public void setTatouage(Tatouage tatouage){
+        this.tatouage = tatouage;
+    }
+    public Tatouage getTatouage (){
+        return this.tatouage;
+    }
+}
+class Tatouage implements Comparable{
+    private String nom;
+    private int identifiant;
+    static public int id;
+    public String getNom (){
+        return this.nom;
+    }
+    public int getIdentifiant (){
+        return this.identifiant;
+    }
+    public Tatouage(String nom){
+        this.nom = nom;
+        this.identifiant = id;
+        id++;
+    }
+    public boolean equals(Object obj) {
+if (this == obj)
+return true;
+if (obj == null)
+return false;
+if (getClass() != obj.getClass())
+return false;
+Tatouage other = (Tatouage) obj;
+if (identifiant!=other.getIdentifiant()) return false;
+return true;
+}
+public int compareTo(Object obj){
+    return this.nom.compareTo(((Tatouage)obj).getNom());
+}
 }
 
 public class td {
@@ -58,6 +99,30 @@ public class td {
         while(it2.hasNext()){
             System.out.println(((Animal)it2.next()).getNom());
         }
+        System.out.println("----------------------------------------------");
+
+        Map <Tatouage , Animal> AnimeauxTatouage= new HashMap<Tatouage , Animal>(); 
+        Map <Tatouage , Animal> animeauxTatouageTreeMap= new TreeMap<Tatouage , Animal>(); 
+        Tatouage tatouage,tatouage2, tatouage3;
+        Animal animal;
+        tatouage=new Tatouage("t2");
+        animal = new Animal("animal1");
+        animal.setTatouage(tatouage);
+        AnimeauxTatouage.put(tatouage, animal);
+        animeauxTatouageTreeMap.put(tatouage, animal);
+
+
+        animal = new Animal("animal2");
+        tatouage2 = new Tatouage("null");
+        animal.setTatouage(tatouage2);
+        AnimeauxTatouage.put(animal.getTatouage(), animal);
+        animeauxTatouageTreeMap.put(tatouage, animal);
+
+        Iterator<Entry<Tatouage,Animal>> itmap =AnimeauxTatouage.entrySet().iterator();
+        Entry<Tatouage,Animal> entry;
+        while (itmap.hasNext()){
+        entry=itmap.next();
+        System.out.println(entry.getKey().getIdentifiant()+" "+entry.getValue().getNom());}
         
     }
 }
