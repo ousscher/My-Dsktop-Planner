@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="813.0" prefWidth="1536.0" style="-fx-background-color: #FBEDEC;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Signpage_controller">
+   <children>
+      <Label fx:id="connecttext" alignment="CENTER" layoutX="2.0" layoutY="365.0" prefHeight="47.0" prefWidth="1533.0" text="Inscrivez-vous pour acceder a My desktop planner ">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <TextField fx:id="pseudosign" layoutX="621.0" layoutY="516.0" prefHeight="47.0" prefWidth="302.0" promptText="Entrer le pseudo" />
+      <Label fx:id="pseudotxt" layoutX="622.0" layoutY="481.0" text="Pseudo :">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="continuesign" layoutX="621.0" layoutY="581.0" mnemonicParsing="false" onAction="#continusign" prefHeight="47.0" prefWidth="302.0" style="-fx-background-color: #191A43; -fx-text-fill: #FFFFFF;" text="Continuer" />
+      <Button fx:id="goback3" layoutX="67.0" layoutY="64.0" mnemonicParsing="false" onAction="#goback" prefHeight="47.0" prefWidth="116.0" style="-fx-background-color: #191A43; -fx-text-fill: #FFFFFF;" text="&lt; Retour" />
+      <ImageView fitHeight="234.0" fitWidth="333.0" layoutX="647.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.png"/>
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

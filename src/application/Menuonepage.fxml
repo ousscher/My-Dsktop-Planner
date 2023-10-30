@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="816.0" prefWidth="1536.0" style="-fx-background-color: #FBEDEC;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Menuone_controller">
+   <children>
+      <VBox prefHeight="816.0" prefWidth="222.0" style="-fx-background-color: #FDD2CD;">
+         <children>
+            <Button fx:id="btn" mnemonicParsing="false" onAction="#Planifierauto" prefHeight="61.0" prefWidth="222.0" style="-fx-background-color: #191A43; -fx-text-fill: #FFFFFF; -fx-border-radius: 20px;" styleClass="menugbtn" text="Ajouter une tache automatique">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#CreerProjet" prefHeight="61.0" prefWidth="222.0" style="-fx-background-color: #191A43; -fx-text-fill: #FFFFFF;" text="Ajouter projet">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#AjouterEnsembleTaches" prefHeight="61.0" prefWidth="222.0" style="-fx-background-color: #191A43; -fx-text-fill: #FFFFFF;" text="Ajouter un ensemble de taches">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#deconnecter" prefHeight="61.0" prefWidth="222.0" style="-fx-background-color: #191A43; -fx-text-fill: #FFFFFF;" text="Deconecter">
+               <VBox.margin>
+                  <Insets top="450.0" />
+               </VBox.margin>
+            </Button>
+         </children></VBox>
+      <VBox layoutX="1315.0" prefHeight="816.0" prefWidth="222.0" style="-fx-background-color: #FDD2CD;">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="61.0" prefWidth="220.0" style="-fx-background-color: #191A43; -fx-text-fill: #FFFFFF;" text="Statistiques" />
+            <Button mnemonicParsing="false" onAction="#afficherBadge" prefHeight="61.0" prefWidth="220.0" style="-fx-background-color: #191A43; -fx-text-fill: #FFFFFF;" text="Badges">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="61.0" prefWidth="220.0" style="-fx-background-color: #191A43; -fx-text-fill: #FFFFFF;" text="Historique">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#elaterPeriode" prefHeight="61.0" prefWidth="220.0" style="-fx-background-color: #191A43; -fx-text-fill: #FFFFFF;" text="Elater période">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </Button>
+         </children></VBox>
+      <FlowPane fx:id="calendar" hgap="10.0" layoutX="317.0" layoutY="224.0" prefHeight="511.0" prefWidth="916.0" vgap="5.0" />
+      <HBox alignment="CENTER" layoutX="317.0" layoutY="159.0" prefHeight="44.0" prefWidth="916.0" spacing="88.75">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="di" textAlignment="CENTER">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+            <Text layoutX="213.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="lu" textAlignment="CENTER">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+            <Text layoutX="222.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ma" textAlignment="CENTER">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+            <Text layoutX="232.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="me" textAlignment="CENTER">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+            <Text layoutX="241.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="je" textAlignment="CENTER">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+            <Text layoutX="251.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ve" textAlignment="CENTER">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+            <Text layoutX="266.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="sa" textAlignment="CENTER">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+         </children>
+         <padding>
+            <Insets right="9.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="549.0" layoutY="75.0" prefHeight="44.0" prefWidth="419.0" spacing="5.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#backOneMonth" style="-fx-background-color: #191A43; -fx-text-fill: #FFFFFF;" text="&lt;" />
+            <Text fx:id="year" strokeType="OUTSIDE" strokeWidth="0.0" text="année">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <Text fx:id="month" strokeType="OUTSIDE" strokeWidth="0.0" text="mois">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <Button mnemonicParsing="false" onAction="#forwardOneMonth" style="-fx-background-color: #191A43; -fx-text-fill: #FFFFFF;" text="&gt;" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

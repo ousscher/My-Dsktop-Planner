@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="813.0" prefWidth="1536.0" style="-fx-background-color: #FBEDEC;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Loginpage_controller">
+   <children>
+      <Label fx:id="connecttext" alignment="CENTER" layoutX="2.0" layoutY="378.0" prefHeight="37.0" prefWidth="1535.0" text="Connectez-vous à votre profile sur My desktop planner ">
+         <font>
+            <Font name="Arial Italic" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="pseudotxt" layoutX="580.0" layoutY="480.0" text="Choissir le pseudo">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="createprofilebutton" layoutX="1203.0" layoutY="717.0" mnemonicParsing="false" onAction="#sign" style="-fx-background-color: #191A43; -fx-text-fill: #FFFFFF;" text="Un nouveau profile ? créer un">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="connecter" layoutX="837.0" layoutY="515.0" mnemonicParsing="false" onAction="#connecter" prefHeight="47.0" prefWidth="150.0" style="-fx-background-color: #191A43; -fx-text-fill: #FFFFFF;" text="Connecter" />
+      <ChoiceBox fx:id="psudos" layoutX="581.0" layoutY="515.0" prefHeight="47.0" prefWidth="239.0" style="-fx-background-color: #FB9B90;" />
+      <ImageView fitHeight="285.0" fitWidth="305.0" layoutX="668.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

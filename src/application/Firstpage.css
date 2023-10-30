@@ -1,0 +1,36 @@
+.root {
+    -fx-background-color:#FBEDEC;
+}
+
+#nomappmain1{
+	
+	/* -fx-font-size: 24px;  Taille de police du titre */
+    -fx-fill: white; 
+}
+.button {
+    -fx-font-size: 16px; /* Taille de police du bouton */
+    -fx-padding: 10px 20px; /* Espacement intérieur du bouton */
+  
+}
+#nomappmain1{
+	
+	 -fx-text-fill: black;
+}
+
+
+#orgnizedays{
+	 -fx-text-fill: black;
+}
+#connecttext{
+	  -fx-text-fill: black;
+}
+#btn{
+	   -fx-border-radius: 25px;
+}
+
+#balek {
+    -fx-text-fill: red; /* Couleur du texte */
+    -fx-background-color: yellow; /* Couleur de fond */
+    -fx-font-size: 14px; /* Taille de la police */
+    /* Ajoutez d'autres styles selon vos besoins */
+}
