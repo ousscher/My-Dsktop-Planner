@@ -1,5 +1,5 @@
 # My-Dsktop-Planner
-tp of poo
+My Desktop Planner is a task scheduling application dedicated to the efficient management of daily activities on desktop computers. 
 
 To start wokring please do this following steps : 
 - Clone the repository.
