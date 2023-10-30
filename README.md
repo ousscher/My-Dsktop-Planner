@@ -1,16 +1,13 @@
+<p align="center"> <img src="Projet/assets/images/logo.png" /> </p>
 # My-Dsktop-Planner
 My Desktop Planner is a task scheduling application dedicated to the efficient management of daily activities on desktop computers. 
 
-To start wokring please do this following steps : 
-- Clone the repository.
-- Navigate to the project directory.
-- Change to the client folder using the command "cd Projet".
-- Create your branch by do this following command : "git checkout -b "YourName/YourTask"
-- To confirm that you are in your branch do this following commande : "git branch". Your branch should be highlighted in a different color than the other branches.
-- You can now work on your local branch. When you are ready to push your changes, follow these steps:
--           -- Use the command "git add *" to stage your changes.
--           -- Use the command "git commit -m "message or comment"" to commit your changes with a message.
--           -- Use the command "git push origin YourName/YourTask" to push your changes to the remote repository.
-- The changes should now be updated on the remote repository.
-- now you can now delete the branch created by do this 2 commandes : "git checkout main" for move to the main branch, than "git branch -d "YourName/YourTask""
-- Sometimes, you may need to use the "pull" command to refresh your local files.
+## Type of users
+
+The users of my application, "My Desktop Planner," encompass a diverse range of individuals and professionals who rely on their desktop computers to efficiently manage daily tasks, to-do lists, and appointments. Whether you're a student, professional, small business owner, remote worker, or simply someone seeking to stay organized, our application is designed to streamline your task management and boost productivity, ensuring you never miss a beat in your daily activities.
+
+## Authors
+
+* [CHERGUELAINE Oussama](https://github.com/ousscher)
+* [MERABET Mohamed Riad](https://github.com/xxx)
+
