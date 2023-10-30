@@ -1,5 +1,5 @@
 <p align="center"> <img src="Projet/assets/images/logo.png" /> </p>
-# My-Dsktop-Planner
+## My-Dsktop-Planner
 My Desktop Planner is a task scheduling application dedicated to the efficient management of daily activities on desktop computers. 
 
 ## Type of users
@@ -9,5 +9,5 @@ The users of my application, "My Desktop Planner," encompass a diverse range of 
 ## Authors
 
 * [CHERGUELAINE Oussama](https://github.com/ousscher)
-* [MERABET Mohamed Riad](https://github.com/xxx)
+* [MERABET Mohamed Riad](https://github.com/Mohaxriad)
 
