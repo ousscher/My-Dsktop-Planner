@@ -1,4 +1,4 @@
-<p align="center"> <img src="Projet/assets/images/logo.png" /> </p>
+<p align="center"> <img src="assets/Capture d’écran 2023-10-30 220238.png" /> </p>
 
 ## My-Dsktop-Planner
 My Desktop Planner is a task scheduling application dedicated to the efficient management of daily activities on desktop computers. 
